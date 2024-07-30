@@ -25,7 +25,7 @@ export default function Navbar() {
 
     return (
         <header className="w-full flex items-center justify-between py-5 bg-white px-4 shadow-md lg:px-44">
-            <h2 className="font-semibold text-2xl">REACT LANDING PAGE</h2>
+            <h2 className="font-bold text-2xl">REACT LANDING PAGE</h2>
             <nav className="hidden lg:block">
                 <div className="flex items-center gap-8">
                     {navbarLinks.map(link => (
