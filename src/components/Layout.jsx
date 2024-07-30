@@ -4,6 +4,7 @@ import Features from './Features'
 import Gallery from './Gallery'
 import Navbar from './Navbar'
 import Services from './Services'
+import Testimonials from './Testimonials'
 
 export default function Layout() {
     return (
@@ -14,6 +15,7 @@ export default function Layout() {
             <About />
             <Services />
             <Gallery />
+            <Testimonials />
         </>
     )
 }
