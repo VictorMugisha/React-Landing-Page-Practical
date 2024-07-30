@@ -1,8 +1,9 @@
+import Layout from "./components/Layout"
 
 function App() {
  
   return (
-    <h1>Hello React</h1>
+    <Layout />
   )
 }
 
