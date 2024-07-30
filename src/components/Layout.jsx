@@ -1,6 +1,7 @@
 import About from './About'
 import Banner from './Banner'
 import Features from './Features'
+import Gallery from './Gallery'
 import Navbar from './Navbar'
 import Services from './Services'
 
@@ -12,6 +13,7 @@ export default function Layout() {
             <Features />
             <About />
             <Services />
+            <Gallery />
         </>
     )
 }
