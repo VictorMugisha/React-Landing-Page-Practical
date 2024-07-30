@@ -4,6 +4,7 @@ import Features from './Features'
 import Gallery from './Gallery'
 import Navbar from './Navbar'
 import Services from './Services'
+import Team from './Team'
 import Testimonials from './Testimonials'
 
 export default function Layout() {
@@ -16,6 +17,7 @@ export default function Layout() {
             <Services />
             <Gallery />
             <Testimonials />
+            <Team />
         </>
     )
 }
