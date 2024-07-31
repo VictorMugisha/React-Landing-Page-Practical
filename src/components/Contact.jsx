@@ -39,7 +39,7 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col items-start justify-start gap-24 lg:flex-row">
-                <div className="flex flex-col w-full lg:w-2/3">
+                <div className="flex flex-col w-full gap-12 lg:w-2/3">
                     <p className="text-sm font-light">
                         Please fill out the form below to send us an email and we will get back to you as soon as possible.
                     </p>
@@ -81,15 +81,15 @@ export default function Contact() {
                         </button>
                     </form>
                 </div>
-                <div className="contacts">
-                    <h3>Contact Info</h3>
+                <div className="flex flex-col gap-8">
+                    <h3 className="text-xl">Contact Info</h3>
 
                     <div>
 
                         <div className="flex flex-col items-start gap-2 mb-6">
                             <div className="flex items-center justify-start gap-2">
                                 <MdLocationPin className="text-lg" />
-                                <p className="text-lg font-semibold">Address</p>
+                                <p className="text-sm font-semibold">Address</p>
                             </div>
                             <p className="text-sm font-light lg:w-48">
                                 4321 California St, San Francisco, CA 12345
@@ -99,7 +99,7 @@ export default function Contact() {
                         <div className="flex flex-col items-start gap-2 mb-6">
                             <div className="flex items-center justify-start gap-2">
                                 <ImPhone className="text-lg" />
-                                <p className="text-lg font-semibold">Phone</p>
+                                <p className="text-sm font-semibold">Phone</p>
                             </div>
                             <p className="text-sm font-light lg:w-48">
                                 +250 799 303 355
@@ -109,7 +109,7 @@ export default function Contact() {
                         <div className="flex flex-col items-start gap-2 mb-6">
                             <div className="flex items-center justify-start gap-2">
                                 <MdMailOutline className="text-lg" />
-                                <p className="text-lg font-semibold">Email</p>
+                                <p className="text-sm font-semibold">Email</p>
                             </div>
                             <p className="text-sm font-light lg:w-48">
                                 victormugishavm6@gmail.com
