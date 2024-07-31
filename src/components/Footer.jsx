@@ -8,6 +8,7 @@ export default function Footer() {
                 &copy; 2023 Victor Mugisha - React Landing Page Template. Design by &nbsp;
                 <a
                     href="https://www.linkedin.com/in/victor-mugisha-shyaka-47b10b233/"
+                    target="_blank"
                     className="text-blue-500"
                 >
                     Victor M

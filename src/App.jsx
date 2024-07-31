@@ -4,7 +4,9 @@ import "./App.css"
 function App() {
  
   return (
-    <Layout />
+    <div className="max-w-[1440px] mx-auto">
+      <Layout />
+    </div>
   )
 }
 

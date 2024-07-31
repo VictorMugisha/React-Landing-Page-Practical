@@ -1,18 +1,17 @@
 import { useState } from "react"
-import bannerImg from "../images/banner.jpeg"
 import BannerPopup from "./BannerPopup"
 
 export default function Banner() {
     const [welcome, setWelcome] = useState(false)
     return (
-        <section className="relative w-full h-screen banner-container">
+        <section className="relative w-full h-screen banner-container xl:h-fit">
 
             {
                 welcome &&
                 <BannerPopup setWelcome={setWelcome} />
             }
 
-            <div className="flex flex-col items-center justify-center w-full h-full gap-4 text-white lg:px-44 bg-custom-gray">
+            <div className="flex flex-col items-center justify-center w-full h-full gap-4 text-white lg:px-44 bg-custom-gray xl:py-60">
                 <h1 className="text-4xl font-bold text-center uppercase lg:text-7xl">We are a <br /> Landing Page</h1>
                 <p className="w-2/3 text-xl font-light text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.
