@@ -5,6 +5,7 @@ import { MdMailOutline } from "react-icons/md"; // Mail
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { TfiYoutube } from "react-icons/tfi";
+import ContactPopup from "./ContactPopup";
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -31,11 +32,15 @@ export default function Contact() {
             alert("All inputs are required")
             return
         }
-
-
+        setMessageBox(true)
+        setFormData({
+            name: '',
+            email: '',
+            message: '',
+        })
     }
     return (
-        <div className="flex flex-col w-full gap-10 px-10 py-20 text-white bg-blue-500 lg:px-44">
+        <div className="relative flex flex-col w-full gap-10 px-10 py-20 text-white bg-blue-500 lg:px-44">
             <div className="flex flex-col gap-3">
                 <h2 className="text-4xl font-bold">GET IN TOUCH</h2>
                 <div className="w-16 h-1 bg-blue-300" />
@@ -122,6 +127,12 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
+
+            {
+                messageBox &&
+                <ContactPopup setMessageBox={setMessageBox} data={formData} />
+            }
+
 
             <div className="w-full h-[1px] bg-custom-transparent-white my-8" />
 
