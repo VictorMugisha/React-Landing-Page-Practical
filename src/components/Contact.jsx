@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { ImPhone } from "react-icons/im"; // Phone
+import { MdLocationPin } from "react-icons/md"; // Location
+import { MdMailOutline } from "react-icons/md"; // Mail
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -9,7 +11,7 @@ export default function Contact() {
     })
     const [errorBox, setErrorBox] = useState(false)
     const [messageBox, setMessageBox] = useState(false)
-    
+
     function handleChange(event) {
         const { name, value } = event.target
         setFormData(prevData => {
@@ -27,7 +29,7 @@ export default function Contact() {
             return
         }
 
-        
+
     }
     return (
         <div className="flex flex-col w-full gap-10 px-10 py-20 text-white bg-blue-500 lg:px-44">
@@ -36,7 +38,7 @@ export default function Contact() {
                 <div className="w-16 h-1 bg-blue-300" />
             </div>
 
-            <div className="flex flex-col items-start justify-start gap-8 lg:flex-row">
+            <div className="flex flex-col items-start justify-start gap-24 lg:flex-row">
                 <div className="flex flex-col w-full lg:w-2/3">
                     <p className="text-sm font-light">
                         Please fill out the form below to send us an email and we will get back to you as soon as possible.
@@ -84,10 +86,34 @@ export default function Contact() {
 
                     <div>
 
-                        <div>
-                            <div>
-
+                        <div className="flex flex-col items-start gap-2 mb-6">
+                            <div className="flex items-center justify-start gap-2">
+                                <MdLocationPin className="text-lg" />
+                                <p className="text-lg font-semibold">Address</p>
                             </div>
+                            <p className="text-sm font-light lg:w-48">
+                                4321 California St, San Francisco, CA 12345
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col items-start gap-2 mb-6">
+                            <div className="flex items-center justify-start gap-2">
+                                <ImPhone className="text-lg" />
+                                <p className="text-lg font-semibold">Phone</p>
+                            </div>
+                            <p className="text-sm font-light lg:w-48">
+                                +250 799 303 355
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col items-start gap-2 mb-6">
+                            <div className="flex items-center justify-start gap-2">
+                                <MdMailOutline className="text-lg" />
+                                <p className="text-lg font-semibold">Email</p>
+                            </div>
+                            <p className="text-sm font-light lg:w-48">
+                                victormugishavm6@gmail.com
+                            </p>
                         </div>
 
                     </div>
