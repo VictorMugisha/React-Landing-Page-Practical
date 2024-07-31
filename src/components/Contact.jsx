@@ -33,11 +33,6 @@ export default function Contact() {
             return
         }
         setMessageBox(true)
-        setFormData({
-            name: '',
-            email: '',
-            message: '',
-        })
     }
     return (
         <div className="relative flex flex-col w-full gap-10 px-10 py-20 text-white bg-blue-500 lg:px-44">
@@ -130,7 +125,7 @@ export default function Contact() {
 
             {
                 messageBox &&
-                <ContactPopup setMessageBox={setMessageBox} data={formData} />
+                <ContactPopup setMessageBox={setMessageBox} data={formData} setFormData={setFormData} />
             }
 
 

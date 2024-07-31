@@ -1,6 +1,6 @@
 import ReactDom from 'react-dom'
 
-export default function ContactPopup({setMessageBox, data}) {
+export default function ContactPopup({setMessageBox, data, setFormData}) {
     return ReactDom.createPortal(
         <section
             className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800 bg-opacity-50"
@@ -17,6 +17,11 @@ export default function ContactPopup({setMessageBox, data}) {
                         className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
                         onClick={() => {
                             setMessageBox(false)
+                            setFormData({
+                                name: '',
+                                email: '',
+                                message: '',
+                            })
                         }}
                     >
                         Cancel
