@@ -2,6 +2,9 @@ import { useState } from "react";
 import { ImPhone } from "react-icons/im"; // Phone
 import { MdLocationPin } from "react-icons/md"; // Location
 import { MdMailOutline } from "react-icons/md"; // Mail
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { TfiYoutube } from "react-icons/tfi";
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -117,6 +120,26 @@ export default function Contact() {
                         </div>
 
                     </div>
+                </div>
+            </div>
+
+            <div className="w-full h-[1px] bg-custom-transparent-white my-8" />
+
+            <div className="flex items-center justify-center gap-8">
+                <div
+                    className="flex items-center justify-center border-2 border-white rounded-full cursor-pointer w-14 h-14 hover:bg-white group"
+                >
+                    <FaFacebookF className="text-2xl group-hover:text-blue-500" />
+                </div>
+                <div
+                    className="flex items-center justify-center border-2 border-white rounded-full cursor-pointer w-14 h-14 hover:bg-white group"
+                >
+                    <FaTwitter className="text-2xl group-hover:text-blue-500" />
+                </div>
+                <div
+                    className="flex items-center justify-center border-2 border-white rounded-full cursor-pointer w-14 h-14 hover:bg-white group"
+                >
+                    <TfiYoutube className="text-2xl group-hover:text-blue-500" />
                 </div>
             </div>
 
