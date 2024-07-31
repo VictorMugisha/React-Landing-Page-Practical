@@ -2,6 +2,7 @@ import About from './About'
 import Banner from './Banner'
 import Contact from './Contact'
 import Features from './Features'
+import Footer from './Footer'
 import Gallery from './Gallery'
 import Navbar from './Navbar'
 import Services from './Services'
@@ -20,6 +21,7 @@ export default function Layout() {
             <Testimonials />
             <Team />
             <Contact />
+            <Footer />
         </>
     )
 }
