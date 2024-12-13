@@ -1,8 +1,12 @@
+import Layout from "./components/Layout"
+import "./App.css"
 
 function App() {
  
   return (
-    <h1>Hello React</h1>
+    <div className="max-w-[1440px] mx-auto">
+      <Layout />
+    </div>
   )
 }
 

@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-gray': 'rgba(0, 0, 0, 0.16)', // Custom color name and RGBA value
+        'custom-transparent-blue': 'rgba(15, 150, 255, 0.724)',
+        'custom-transparent-white': 'rgba(255, 255, 255, 0.24)',
+      },
+    },
   },
   plugins: [],
 }
